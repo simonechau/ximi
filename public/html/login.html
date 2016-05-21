@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XIMI</title>
+    <link href="../js/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/lib/gentelella-master/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../js/lib/gentelella-master/css/animate.min.css" rel="stylesheet">
+    <link href="../js/lib/gentelella-master/css/custom.css" rel="stylesheet">
+
+    <script src="../js/lib/jquery/jquery-2.2.3.min.js"></script>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Welcome to Ximi！</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                            <ul id="myTab1" class="nav nav-tabs bar_tabs right" role="tablist">
+                                <li role="presentation" class="active"><a href="#tab_login" id="login-tabb" role="tab" data-toggle="tab" aria-controls="login" aria-expanded="true">登陆</a>
+                                </li>
+                                <li role="presentation" class=""><a href="#tab_register" role="tab" id="register-tabb" data-toggle="tab" aria-controls="register" aria-expanded="false">注册</a>
+                                </li>
+                            </ul>
+                            <div id="myTabContent2" class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade active in" id="tab_login" aria-labelledby="login-tab">
+                                    <form id="login_form" class="form-horizontal form-label-left" novalidate>
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">用户名
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="login_name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" name="name" required="required" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="item form-group">
+                                            <label for="password" class="control-label col-md-3 col-sm-3 col-xs-12">密码</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="login_password" type="password" name="password" class="form-control col-md-7 col-xs-12" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="ln_solid"></div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-5">
+                                                <button id="login_send" type="submit" class="btn btn-success">登陆</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_register" aria-labelledby="register-tab">
+                                    <form id="register_form" class="form-horizontal form-label-left" novalidate>
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">用户名
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="register_name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" name="name" required="required" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="email" id="register_email" required="required" name="email" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="item form-group">
+                                            <label for="password" class="control-label col-md-3 col-sm-3 col-xs-12">密码</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="register_password" type="password" name="password" class="form-control col-md-7 col-xs-12" required="required">
+                                            </div>
+                                        </div>
+                                        <!--<div class="item form-group">
+                                            <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">再一次密码</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="register_password2" type="password" name="password2" data-validate-linked="register_password" class="form-control col-md-7 col-xs-12" required="required">
+                                            </div>
+                                        </div>-->
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">个性签名
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <textarea id="textarea" name="personal" class="form-control col-md-7 col-xs-12"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="ln_solid"></div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-5">
+                                                <button id="register_send" type="submit" class="btn btn-success">注册</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="../js/lib/gentelella-master/custom.js"></script>
+    <script src="../js/lib/validator/validator.js"></script>
+    <script src="../js/dest/login.js"></script>
+
+</body>
+</html>

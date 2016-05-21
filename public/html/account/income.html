@@ -1,0 +1,116 @@
+<link href="../js/lib/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/datatables/editor.bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/datatables/select.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+<div id="income">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>收入 <small>记一笔</small></h2>
+                    <ul class="nav navbar-right panel_toolbox" style="min-width: 0px">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <form id="income_form" data-parsley-validate class="form-horizontal form-label-left">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">描述</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" name="described" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">金额</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" name="sum" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">分类</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select name="item" class="select2_group form-control col-md-7 col-xs-12" required="required">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">账户</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="select2_single form-control  col-md-7 col-xs-12" name="method" required="required">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">成员</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="select2_single form-control  col-md-7 col-xs-12" name="member" required="required">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">日期</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name='date' class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-5">
+                                <button type="submit" class="btn btn-success">记账</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>账单 <small>收入</small></h2>
+                    <ul class="nav navbar-right panel_toolbox" style="min-width: 0px">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    </br>
+                    <table id="income_data" class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>描述</th>
+                            <th>分类</th>
+                            <th>账户</th>
+                            <th>成员</th>
+                            <th>金额</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/lib/datatables/jquery.dataTables.min.js"></script>
+<script src="../js/lib/datatables/dataTables.bootstrap.js"></script>
+<script src="../js/lib/datatables/dataTables.buttons.min.js"></script>
+<script src="../js/lib/datatables/buttons.bootstrap.min.js"></script>
+<script src="../js/lib/datatables/dataTables.select.min.js"></script>
+<script src="../js/lib/datatables/dataTables.editor.min.js"></script>
+<script src="../js/lib/datatables/editor.bootstrap.min.js"></script>
+
+<script src="../js/lib/datetimepicker/js/datetimepicker.js"></script>
+<script src="../js/lib/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../js/dest/income.js"></script>
