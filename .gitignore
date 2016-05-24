@@ -1,1 +1,3 @@
-.idea/#
+.idea/
+public/js/node_modules/
+cakephp/tmp/
